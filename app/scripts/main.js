@@ -151,6 +151,8 @@
 
             $('a[href="#graph"]', appContext).tab('show');
 
+            $('#cy_pane', appContext).addClass('hidden');
+
             var query = {
                 'locus': this.locus_id.value,
                 'pathalg': 'allSimplePaths',
