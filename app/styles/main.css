@@ -1,0 +1,15 @@
+#cy_pane {
+  height: 900px;
+  padding: 0;
+}
+
+#cy_wrapper {
+  position: relative;
+}
+
+#cy_tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}

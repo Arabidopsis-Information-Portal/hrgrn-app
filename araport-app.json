@@ -1,0 +1,12 @@
+{
+  "icon": "",
+  "name": "hrgrn-app",
+  "description": "Show hormone and gene regulatory network graphs",
+  "html": "main.html",
+  "scripts": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/main.css"
+  ]
+}

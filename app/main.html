@@ -1,0 +1,78 @@
+<div class="science-app" data-app-name="hrgrn-app">
+    <h3>Enter a locus to search HRGRN</h3>
+    <form id="locus_search" role="form">
+        <div class="form-group row">
+            <div class="col-xs-3">
+                <label for="locus_id" class="control-label">Locus ID (e.g. AT3G46810):</label>
+                <input type="text" name="locus_id" id="locus_id" value="AT3G46810" class="form-control" placeholder="e.g. AT3G46810">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" checked="" disabled="">Use defaults
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-xs-3">
+                <button type="submit" id="searchButton" class="btn btn-success">Search</button>
+                <button type="button" id="clearButton" class="btn btn-danger">Clear</button>
+            </div>
+        </div>
+    </form>
+
+    <br>
+
+     <div id="error"></div>
+     <div id="progress_region" class="hidden">
+        <h4>Searching...</h4>
+        <div class="progress progress-striped active">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                <span class="sr-only">Loading Data</span>
+            </div>
+        </div>
+     </div>
+
+    <br>
+
+    <!-- Navigation tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li id="about-tab"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+        <li id="graph-tab" class="active"><a href="#graph" aria-controls="graph" role="tab" data-toggle="tab">Graph</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+        <!-- About tab -->
+        <div role="tabpanel" class="tab-pane fade in" id="about">
+            <p>A Graph Search-Empowered Integrative Database of Arabidopsis Signaling Transduction, Metabolism and Gene Regulation Networks.</p>
+
+            <p>Community Resource by <a href="http://plantgrn.noble.org/hrgrn/" target="_blank">The Samuel Roberts Noble Foundation <i class="fa fa-external-link"></i></a>.</p>
+
+            <p>Publication: <a href="http://pcp.oxfordjournals.org/content/early/2015/12/28/pcp.pcv200.long" target="_blank">HRGRN: A Graph Search-Empowered Integrative Database of Arabidopsis Signaling Transduction, Metabolism and Gene Regulation Networks. Dai X, Li J, Liu T, Zhao PX. Plant Cell Physiol. 2015 Dec 12. pii: pcv200. <i class="fa fa-external-link"></i></a></p>
+        </div> <!-- Close #about -->
+
+        <div id="graph" class="tab-pane fade in active">
+            <div id="cy_wrapper">
+                <div id="cy_tooltip" class="bg-warning"></div>
+                <div id="cy_pane" class="hidden"></div>
+            </div>
+        </div>
+
+    </div> <!-- Close .tab-content -->
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <p>
+                Data &amp; web services provided by
+                <a href="http://plantgrn.noble.org/hrgrn/" target="_blank">HRGRN <i class="fa fa-external-link"></i></a>.
+            </p>
+        </div>
+    </div>
+</div>

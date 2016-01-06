@@ -1,0 +1,8 @@
+{
+  "name": "hrgrn-app",
+  "private": true,
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "cytoscape": "~2.5.4"
+  }
+}
