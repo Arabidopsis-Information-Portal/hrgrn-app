@@ -25,7 +25,7 @@
             // clear progress bar and spinners
             $('#progress_region', appContext).addClass('hidden');
             console.error('Status: ' + response.obj.status + ' Message: ' + response.obj.message);
-            $('#error', appContext).html(errorMessage('API Error: ' + response.obj.message));
+            $('#error', appContext).html(errorMessage(response.obj.message));
         };
 
         var renderCytoscape = function renderCytoscape(elements) {
@@ -119,8 +119,6 @@
                 var search_locus = $('#locus_id', appContext).val();
                 $('#error', appContext).html(warningMessage('No results found for locus identifier \'' + search_locus + '\'. Please try again.'));
             }
-            //var view = assignViewOptions(json.obj);
-            //renderLegend(view.keyInfo);
         };
 
         if(console){
@@ -185,7 +183,7 @@
             $('#progress_region', appContext).removeClass('hidden');
             Agave.api.adama.search({
                 'namespace': 'hrgrn',
-                'service': 'hrgrn_node_details_by_locus_v0.7',
+                'service': 'hrgrn_node_details_by_locus_v0.8',
                 'queryParams': query
             }, showGraphResults, showErrorMessage);
 
