@@ -183,7 +183,7 @@
             $('#progress_region', appContext).removeClass('hidden');
             Agave.api.adama.search({
                 'namespace': 'hrgrn',
-                'service': 'hrgrn_node_details_by_locus_v0.8',
+                'service': 'hrgrn_node_details_by_locus_v0.9',
                 'queryParams': query
             }, showGraphResults, showErrorMessage);
 
