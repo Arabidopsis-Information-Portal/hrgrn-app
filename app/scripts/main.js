@@ -112,7 +112,7 @@
             }
 
             if (json.obj.result[0]) {
-                console.log('JSON: ' + JSON.stringify(json.obj.result[0], null, 2));
+                //console.log('JSON: ' + JSON.stringify(json.obj.result[0], null, 2));
                 renderCytoscape(json.obj.result[0]);
             } else {
                 $('#cy_pane', appContext).html('');
@@ -122,7 +122,7 @@
         };
 
         if(console){
-            console.log('Agave has been initialized, do something in ' + appContext);
+            console.log('Agave has been initialized...');
             /* Remove this if you don't want to print the example */
         }
 
