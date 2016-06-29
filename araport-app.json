@@ -1,12 +1,16 @@
 {
-  "icon": "",
-  "name": "hrgrn-app",
-  "description": "Show hormone and gene regulatory network graphs",
+  "namespace" : "hrgrn-app",
+  "name": "HRGRN App",
+  "description": "Display hormone and gene regulatory network graphs from HRGRN.",
   "html": "main.html",
   "scripts": [
     "scripts/main.js"
   ],
   "styles": [
     "styles/main.css"
-  ]
+  ],
+  "tags": [
+    "arabidopsis", "metabolism", "signal transduction", "gene regulatory network"
+  ],
+  "icon": "app/images/logo.png"
 }
